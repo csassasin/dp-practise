@@ -1,8 +1,11 @@
-## Welcome to GitHub Pages
+## Dynamic Programming
 
-You can use the [editor on GitHub](https://github.com/csassasin/dp-practise/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Problem : Minimum Cost to Merge Stones
+There are n piles of stones arranged in a row. The ith pile has stones[i] stones.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+A move consists of merging exactly k consecutive piles into one pile, and the cost of this move is equal to the total number of stones in these k piles.
+
+Return the minimum cost to merge all piles of stones into one pile. If it is impossible, return -1.
 
 ### Markdown
 
