@@ -36,8 +36,9 @@ This problem is amongst one of the harder problems in dynamic programming . It t
 
    ``` 
        dp(i,j,k) = means the minimum cost to merge array from index i to index j 
-       into k different piles ```
-
+       into k different piles 
+   
+   ```
 
 7. Now , since state is known , here are transitions between the states 
    
@@ -64,6 +65,7 @@ This problem is amongst one of the harder problems in dynamic programming . It t
        
        dp(i,i,1) = Since only merge operation has cost therfore , and we dont need 
                    merge in the interval i to i to create 1 pile, the cost is 0 . 
+
 
    ```
 
