@@ -42,9 +42,14 @@ This problem is amongst one of the harder problems in dynamic programming . It t
                    where i is inclusive and j is exclusive .
        Base Cases :
        dp(i,i,1) = Since only merge operation has cost therfore , and we dont need 
-                   merge in the interval i to i to create 1 pile, the cost is 0 .
+                   merge in the interval i to i to create 1 pile, the cost is 0 . 
+
+   ```
+
+8. 
+
        
-       
+
                    
         
 
