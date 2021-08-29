@@ -76,8 +76,7 @@ This problem is amongst one of the harder problems in dynamic programming . It t
 - Now , if you have understood the above , please go through the code .  
 
 
-    ```C++
-       class Solution {
+    `C++ class Solution {
             
         public:
             int dp[50][50][50];
@@ -151,9 +150,7 @@ This problem is amongst one of the harder problems in dynamic programming . It t
             // find the minimum cost to merge stones[0...n-1] into 1 piles
             return minCost(0,n-1,1,prefixsum,k);
         }
-    };
-    
-    ```
+    };`
        
 
 
