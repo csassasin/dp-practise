@@ -25,17 +25,17 @@ Here is my attempt to actually explain what I understood and visualize the probl
     represents . **A pile here is basically a continuous segment in the array without any restriction on the length** . How does we arrive to the defination of pile ? .
 
 
-4.  *Below is an attempt to explain defination of a pile.* 
+-  *Below is an attempt to explain defination of a pile.* 
 
    ![Description of a pile](/images/Screenshot.png) 
 
 
-5.  If my attempt to make you understand what a pile is successful, then the above problem
+-  If my attempt to make you understand what a pile is successful, then the above problem
     reduces to actually dividing the array into k segments such that the total cost for 
     reaching to this k piles in minimum . 
 
 
-6.  Let define the state for the above DP problem :
+-  Let define the state for the above DP problem :
 
    ``` 
        dp(i,j,k) = means the minimum cost to merge array from index i to index j 
@@ -43,7 +43,7 @@ Here is my attempt to actually explain what I understood and visualize the probl
    
    ```
 
-7. Now , since state is known , here are transitions between the states 
+- Now , since state is known , here are transitions between the states 
    
    
    ``` 
@@ -73,7 +73,7 @@ Here is my attempt to actually explain what I understood and visualize the probl
    ```
 
 
-8. Now , if you have understood the above , please go through the code .  
+- Now , if you have understood the above , please go through the code .  
 
        
 
