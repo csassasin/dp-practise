@@ -76,11 +76,11 @@ This problem is amongst one of the harder problems in dynamic programming . It t
 - Now , if you have understood the above , please go through the code .  
 
 
-    ```
+    ```C++
        class Solution {
-    public:
-    
-    int dp[50][50][50];
+            
+        public:
+            int dp[50][50][50];
     
         int minCost(int i,int j,int piles,vector<int>&prefixsum,int &K){
             
