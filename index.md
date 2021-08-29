@@ -17,9 +17,9 @@ This problem is amongst one of the harder problems in dynamic programming . It t
 
 3. Now the question arises how do we create K piles in the previous steps such that
    it gives minimum cost . To understand this , we must understand what does a pile
-   represents . **A pile here is basically a constinuous segment in the array without any restriction on the length** . How does we arrive to the defination of pile ? .
+   represents . **A pile here is basically a continuous segment in the array without any restriction on the length** . How does we arrive to the defination of pile ? .
 
- 4. Below is an attempt to explain defination of a pile . 
+ 4. *Below is an attempt to explain defination of a pile.* 
 
    ![Description of a pile](/images/Screenshot.png) 
 
@@ -28,10 +28,25 @@ This problem is amongst one of the harder problems in dynamic programming . It t
    reduces to actually dividing the array into k segments such that the total cost for 
    reaching to this k piles in minimum . 
 
-6. Let define the state for the above DP problem 
-   ``` dp(i,j,k) = means the minimum cost to merge array from index i to index j 
+6. Let define the state for the above DP problem :
+
+   ``` 
+       dp(i,j,k) = means the minimum cost to merge array from index i to index j 
        into k different piles ```
 
+7. Now , since state is known , here are transitions between the states 
+   ``` 
+       dp(i,j,k) = dp(i,j,k) + sum[i..j] if  k==1 
+                   where sum[i..j] represents the sum between index i and index j .
+       dp(i,j,k) = dp(i,t,1) + dp(t+1,j,k-1) where  t lies between index i to j 
+                   where i is inclusive and j is exclusive .
+       Base Cases :
+       dp(i,i,1) = Since only merge operation has cost therfore , and we dont need 
+                   merge in the interval i to i to create 1 pile, the cost is 0 .
+       
+       
+                   
+        
 
 
 
