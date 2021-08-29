@@ -149,13 +149,11 @@ This problem is amongst one of the harder problems in dynamic programming . It t
             
             memset(dp,-1,sizeof(dp));
             
-            // find the minimum cost to merge stones[0...n-1] into 1 piles
+            // find the minimum cost to merge stones[0...n-1] into 1 piles .
             return minCost(0,n-1,1,prefixsum,k);
         }
     };
 
     ```
-       
 
-
-Please share like and upvote if you liked the explanation .
+Please give stars to the repository if you like the content .
