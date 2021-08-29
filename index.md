@@ -76,8 +76,8 @@ This problem is amongst one of the harder problems in dynamic programming . It t
 - Now , if you have understood the above , please go through the code .  
 
 
-    ```C++
-    
+    ```cpp
+
     class Solution {
             
         public:
