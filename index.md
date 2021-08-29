@@ -36,17 +36,29 @@ This problem is amongst one of the harder problems in dynamic programming . It t
 
 7. Now , since state is known , here are transitions between the states 
    ``` 
-       dp(i,j,k) = dp(i,j,k) + sum[i..j] if  k==1 
+       Transitions 
+
+       dp(i,j,1) = dp(i,j,k) + sum[i..j] 
                    where sum[i..j] represents the sum between index i and index j .
+                   Which means that in order to create one pile from index i to 
+                   to index j (dp(i,j,1)), the minimum cost is to create k piles from index i to index j (dp(i,j,k)) and merge the operation cost which is sum of the segment.               
+
        dp(i,j,k) = dp(i,t,1) + dp(t+1,j,k-1) where  t lies between index i to j 
                    where i is inclusive and j is exclusive .
+                   which means that in order to create k pile from index i to 
+                   index j , we first choose any segment of arbitary length 
+                   and try creating the pile from (i,t) and then check for the
+                   minimum cost of creating (k-1) piles from the rest of the 
+                   array .
+
        Base Cases :
+       
        dp(i,i,1) = Since only merge operation has cost therfore , and we dont need 
                    merge in the interval i to i to create 1 pile, the cost is 0 . 
 
    ```
 
-8. 
+8. Now , if you have understood let me walk through the code 
 
        
 
